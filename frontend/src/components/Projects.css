@@ -7,6 +7,9 @@
   max-width: 1200px;
   margin: 0 auto;
   animation: fadeIn 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -21,7 +24,8 @@
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+  width: fit-content;
   background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -43,6 +47,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  width: 100%;
 }
 
 .project-card {
@@ -50,25 +55,21 @@
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px var(--shadow-color);
-  transition: all 0.3s ease;
-  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
   display: block;
-  transform: scale(1);
 }
 
 .project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px var(--shadow-color);
-}
-
-.project-card:hover .project-title {
-  color: var(--primary-dark);
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px var(--shadow-color);
 }
 
 .project-image {
   width: 100%;
   height: 200px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .project-image img {
@@ -85,22 +86,19 @@
   font-size: 1.25rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0.5rem;
   border-radius: 8px;
   display: inline-block;
-}
-
-.project-title:hover {
-  transform: scale(1.02);
-  background-color: var(--background-secondary);
-  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: none;
+  text-align: center;
+  width: 100%;
 }
 
 .project-description {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 .project-tags {
@@ -108,6 +106,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .project-tag {
@@ -121,6 +120,7 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .project-link {
@@ -161,6 +161,7 @@
 
   .section-title {
     font-size: 2rem;
+    margin: 0 auto 2rem;
   }
 
   .projects-grid {
@@ -179,4 +180,4 @@
     width: 100%;
     justify-content: center;
   }
-} 
+}

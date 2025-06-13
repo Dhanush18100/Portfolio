@@ -1,24 +1,27 @@
 import React from 'react';
 import './Projects.css';
 
+
+
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1. What it does, technologies used, and key features.',
-    image: '/project1.jpg',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    githubLink: 'https://github.com/yourusername/project1',
-    liveLink: 'https://project1.com'
+    title: 'E-commerce+Admin',
+    description:
+      'A full-stack eCommerce website built using the MERN stack, featuring user authentication, product management, and a powerful admin dashboard for real-time order and inventory control.',
+    image:'https://tse4.mm.bing.net/th?id=OIP.Dj4p6CnQRMRZVBPCn-1-6wHaEK&pid=Api&P=0&h=180',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js'],
+    githubLink: 'https://github.com/Dhanush18100/rabbit.git',
+    liveLink: 'https://rabbit-frontend-0und.onrender.com',
   },
   {
-    title: 'Project 2',
-    description: 'Description of project 2. What it does, technologies used, and key features.',
-    image: '/project2.jpg',
-    tags: ['React', 'Express', 'MongoDB'],
-    githubLink: 'https://github.com/yourusername/project2',
-    liveLink: 'https://project2.com'
+    title: 'AI-Interview Mocker',
+    description:
+      'An AI-based interview system that simulates real-time mock interviews using intelligent question generation, voice/text interaction, and performance feedback to help users prepare effectively for job interviews.',
+   image:'https://www.aitoolnet.com/uploadfile/202401/63ee6b96975895c.jpg',
+    tags: ['Next.js', 'Drizzle ORM', 'Gemini AI', 'Clerk'],
+    githubLink: 'https://github.com/Dhanush18100/AI_Mock_Interview.git',
+    liveLink: 'https://ai-mock-interview-zeta-lilac.vercel.app',
   },
-  // Add more projects as needed
 ];
 
 const Projects = () => {
@@ -39,7 +42,8 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   onError={(e) => {
-                    e.target.src = 'https://placehold.co/400x200/e9ecef/495057/png?text=Project+Image';
+                    e.target.src =
+                      'https://placehold.co/400x200/e9ecef/495057/png?text=Project+Image';
                   }}
                 />
               </div>
@@ -89,4 +93,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

@@ -1,28 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yourusername', icon: '🐱' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: '💼' },
-    { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: '🐦' },
-    { name: 'Email', url: 'mailto:your.email@example.com', icon: '📧' },
+    { name: 'GitHub', url: 'https://github.com/Dhanush18100' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/dhanush-a29b38284/' },
+    { name: 'Email', url: 'mailto:dhanush.nayak.100@gmail.com' },
   ];
 
   const quickLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Home', path: '#home' },
+    { name: 'About', path: '#about' },
+    { name: 'Skills', path: '#skills' },
+    { name: 'Projects', path: '#projects' },
+    { name: 'Contact', path: '#contact' },
   ];
 
   return (
     <footer className="footer">
       <div className="footer-content">
+        {/* Profile section */}
         <div className="footer-section">
           <h3 className="footer-title">Dhanush</h3>
           <p className="footer-description">
@@ -31,19 +30,21 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* Quick Links */}
         <div className="footer-section">
           <h3 className="footer-title">Quick Links</h3>
           <ul className="footer-links">
             {quickLinks.map((link) => (
               <li key={link.name}>
-                <Link to={link.path} className="footer-link">
+                <a href={link.path} className="footer-link">
                   {link.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
         </div>
 
+        {/* Social Links */}
         <div className="footer-section">
           <h3 className="footer-title">Connect</h3>
           <div className="social-links">
@@ -56,14 +57,14 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label={link.name}
               >
-                <span className="social-icon">{link.icon}</span>
-                <span className="social-name">{link.name}</span>
+                {link.name}
               </a>
             ))}
           </div>
         </div>
       </div>
 
+      {/* Bottom copyright */}
       <div className="footer-bottom">
         <p>&copy; {currentYear} Dhanush. All rights reserved.</p>
       </div>
@@ -71,4 +72,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

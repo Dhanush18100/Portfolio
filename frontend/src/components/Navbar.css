@@ -103,10 +103,6 @@
   transform: rotate(15deg);
 }
 
-.theme-toggle:focus {
-  outline: none;
-}
-
 .mobile-menu-button {
   display: none;
   background: none;
@@ -175,6 +171,20 @@
   background-color: var(--background-secondary);
 }
 
+/* 🔧 Fix: Remove border/outline on focus/click */
+.nav-link:focus,
+.nav-link:active,
+.theme-toggle:focus,
+.theme-toggle:active,
+.mobile-nav-link:focus,
+.mobile-nav-link:active,
+.mobile-menu-button:focus,
+.mobile-menu-button:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -200,4 +210,4 @@
     flex-direction: column;
     gap: 0.5rem;
   }
-} 
+}

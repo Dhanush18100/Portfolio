@@ -15,7 +15,7 @@ const Hero = () => {
 
         <div className="hero-buttons">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Dhanush18100"
             target="_blank"
             rel="noopener noreferrer"
             className="hero-button github"
@@ -26,7 +26,7 @@ const Hero = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/dhanush-a29b38284/"
             target="_blank"
             rel="noopener noreferrer"
             className="hero-button linkedin"
@@ -44,7 +44,7 @@ const Hero = () => {
             <svg className="button-icon" viewBox="0 0 24 24">
               <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
             </svg>
-            Download CV
+            Download Resume
           </a>
         </div>
       </div>
