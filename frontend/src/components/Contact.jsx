@@ -29,7 +29,7 @@ const Contact = () => {
     setStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      const response = await axios.post("https://portfolio-backend-2pl7.onrender.com/api/message", formData, {
+      const response = await axios.post("https://portfolio-backend-2pl7.onrender.com/api/messages", formData, {
         headers: {
           'Content-Type': 'application/json'
         }
