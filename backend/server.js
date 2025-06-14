@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000','https://portfolio-frontend-kmoh.onrender.com'],
+  origin: 'https://portfolio-frontend-kmoh.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
@@ -21,34 +21,34 @@ app.get('/', (req, res) => {
   res.send('Portfolio API is running');
 });
 
-const PORT = 5000; // Fixed port number
-
-// Start server first
-const server = app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-  console.log('Environment:', process.env.NODE_ENV);
-});
-
-// Then try to connect to MongoDB
+// Connect to MongoDB first, then start the server
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => {
-  console.log('MongoDB Connected');
-  // Only set up routes after MongoDB is connected
+  console.log('✅ MongoDB Connected');
+
+  // Register routes
   app.use('/api/messages', messageRoutes);
+
+  // Start the server
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Server is running on port ${PORT}`);
+    console.log('Environment:', process.env.NODE_ENV);
+  });
 })
 .catch((err) => {
-  console.log('MongoDB Connection Error:', err);
-  console.log('Server will continue running without database functionality');
+  console.error('❌ MongoDB Connection Error:', err);
+  process.exit(1); // Stop server if DB doesn't connect
 });
 
-// Error handling middleware
+// Global error handler
 app.use((err, req, res, next) => {
-  console.error('Error:', err);
+  console.error('Global Error:', err);
   res.status(500).json({
     message: 'Something went wrong!',
     error: process.env.NODE_ENV === 'development' ? err.message : 'Internal server error'
   });
-}); 
+});
