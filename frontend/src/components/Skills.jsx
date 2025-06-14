@@ -95,11 +95,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="skills-footer">
-          <p>
-            Continuously learning and expanding my skillset in modern web development technologies.
-          </p>
-        </div>
+       
       </div>
     </section>
   );

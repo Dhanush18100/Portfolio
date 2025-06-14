@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Message = require('./models/Message');
 
-mongoose.connect('mongodb://localhost:27017/portfolio', {
+mongoose.connect('mongodb+srv://dhanushnayak100:xC1eqnR0Pw1vRX5N@cluster0.yiri50b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

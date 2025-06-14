@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const projectRoutes = require('./routes/projectRoutes');
 const messageRoutes = require('./routes/messageRoutes');
 
 dotenv.config();
@@ -38,7 +37,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio
 .then(() => {
   console.log('MongoDB Connected');
   // Only set up routes after MongoDB is connected
-  app.use('/api/projects', projectRoutes);
   app.use('/api/messages', messageRoutes);
 })
 .catch((err) => {
