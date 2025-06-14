@@ -29,7 +29,7 @@ const Contact = () => {
     setStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      const response = await axios.post("https://localhost:5000/api/messages", formData, {
+      const response = await axios.post("http://localhost:5000/api/messages", formData, {
         headers: {
           'Content-Type': 'application/json'
         }
