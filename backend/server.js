@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://portfolio-frontend-kmoh.onrender.com',
+  origin: ['https://portfolio-frontend-kmoh.onrender.com','http://localhost:3000'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));
