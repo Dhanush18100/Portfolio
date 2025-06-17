@@ -9,9 +9,18 @@ const projects = [
     description:
       'A full-stack eCommerce website built using the MERN stack, featuring user authentication, product management, and a powerful admin dashboard for real-time order and inventory control.',
     image:'https://tse4.mm.bing.net/th?id=OIP.Dj4p6CnQRMRZVBPCn-1-6wHaEK&pid=Api&P=0&h=180',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express.js'],
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
     githubLink: 'https://github.com/Dhanush18100/rabbit.git',
     liveLink: 'https://rabbit-frontend-0und.onrender.com',
+  },
+   {
+    title: 'Real time chatting application',
+    description:
+      'A real-time chatting application built using the MERN stack, Socket.io, and Tailwind CSS for seamless messaging and responsive UI.',
+   image:'/chatX.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Socket.io','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/ChatX.git',
+    liveLink: ' https://chatx-e7ya.onrender.com',
   },
   {
     title: 'AI-Interview Mocker',
@@ -22,6 +31,7 @@ const projects = [
     githubLink: 'https://github.com/Dhanush18100/AI_Mock_Interview.git',
     liveLink: 'https://ai-mock-interview-zeta-lilac.vercel.app',
   },
+ 
 ];
 
 const Projects = () => {
