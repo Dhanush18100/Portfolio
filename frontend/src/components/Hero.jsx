@@ -37,7 +37,7 @@ const Hero = () => {
             LinkedIn
           </a>
           <a
-            href="/resume.pdf"
+            href="/Dhanush(Resume).pdf"
             download
             className="hero-button resume"
           >
