@@ -31,6 +31,24 @@ const projects = [
     githubLink: 'https://github.com/Dhanush18100/AI_Mock_Interview.git',
     liveLink: 'https://ai-mock-interview-zeta-lilac.vercel.app',
   },
+  {
+    title: 'Doctor Appointment',
+    description:
+      'A full-stack MERN application that allows patients to book and manage doctor appointments online, with secure authentication and role-based dashboards for doctors ,admin and patients.',
+    image:'https://www.softwaresuggest.com/blog/wp-content/uploads/2020/10/Best-Medical-Appointment-Scheduling-Software-in-2020.jpg',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/CareConnect.git',
+    liveLink: 'https://github.com/Dhanush18100/CareConnect.git',
+  },
+  {
+     title: 'QuickGPT',
+    description:
+      'An AI-powered chat application built with the MERN stack that enables users to interact with an intelligent chatbot for instant answers and task assistance.',
+    image:'https://in.images.search.yahoo.com/images/view;_ylt=AwrPplC4DgdpTj8szP29HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzAxMjdhNjc3YTFmM2VhNDRmZTMzYjc5Y2ViMDAyZmEwBGdwb3MDOARpdANiaW5n?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dchatgpt%26type%3DE210IN885G0-E210IN885G0%26fr%3Dmcafee%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D8&w=976&h=549&imgurl=ichef.bbci.co.uk%2Fnews%2F976%2Fcpsprodpb%2F7402%2Fproduction%2F_129089692_0e6750b2-5da6-4922-89f4-b31e2fb74859.jpg&rurl=https%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Ftechnology-65047304%3F_hsenc%3Dp2ANqtz-9PQlmjIsLUOzlzInxmjlVsNGyERPH-UFrGV7ripyvJESV7R4PfIJpxbCfTfmVw2Cu8xJLG&size=96KB&p=chatgpt&oid=0127a677a1f3ea44fe33b79ceb002fa0&fr2=piv-web&fr=mcafee&tt=ChatGPT+bug+leaked+users%26%2339%3B+conversation+histories+-+BBC+News&b=0&ni=21&no=8&ts=&tab=organic&sigr=E0nJaPNotfDl&sigb=cLfecd3ID.Dx&sigi=HRrAZ7EcC9Wp&sigt=6jt51Rt.Z9eu&.crumb=qu9wip9LIS9&fr=mcafee&fr2=piv-web&type=E210IN885G0-E210IN885G0',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss','Gemini AI'],
+    githubLink: 'https://github.com/Dhanush18100/QuickGPT.git',
+    liveLink: 'https://quick-gpt-mauve-three.vercel.app/',
+  }
  
 ];
 
