@@ -8,7 +8,7 @@ const projects = [
     title: 'E-commerce+Admin',
     description:
       'A full-stack eCommerce website built using the MERN stack, featuring user authentication, product management, and a powerful admin dashboard for real-time order and inventory control.',
-    image:'https://tse4.mm.bing.net/th?id=OIP.Dj4p6CnQRMRZVBPCn-1-6wHaEK&pid=Api&P=0&h=180',
+    image:'https://static.vecteezy.com/system/resources/previews/000/270/486/non_2x/vector-online-shopping-web-banner.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
     githubLink: 'https://github.com/Dhanush18100/rabbit.git',
     liveLink: 'https://rabbit-frontend-0und.onrender.com',
@@ -17,7 +17,7 @@ const projects = [
     title: 'Real time chatting application',
     description:
       'A real-time chatting application built using the MERN stack, Socket.io, and Tailwind CSS for seamless messaging and responsive UI.',
-   image:'/chatX.png',
+   image:'https://img.freepik.com/premium-vector/chat-app-smartphone-messenger-communication-application-ui-templates-with-sign-messaging-contacts-screens-collection-mobile-interfaces-with-buttons-vector-phones-set_176516-3076.jpg?w=2000',
     tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Socket.io','Tailwindcss'],
     githubLink: 'https://github.com/Dhanush18100/ChatX.git',
     liveLink: ' https://chatx-e7ya.onrender.com',
@@ -26,7 +26,7 @@ const projects = [
     title: 'AI-Interview Mocker',
     description:
       'An AI-based interview system that simulates real-time mock interviews using intelligent question generation, voice/text interaction, and performance feedback to help users prepare effectively for job interviews.',
-   image:'https://www.aitoolnet.com/uploadfile/202401/63ee6b96975895c.jpg',
+   image:'https://thumbs.dreamstime.com/z/ai-stealing-our-jobs-ai-job-interview-generative-ai-ai-getting-interviewed-job-ai-taking-our-jobs-office-robot-machine-274169270.jpg',
     tags: ['Next.js', 'Drizzle ORM', 'Gemini AI', 'Clerk'],
     githubLink: 'https://github.com/Dhanush18100/AI_Mock_Interview.git',
     liveLink: 'https://ai-mock-interview-zeta-lilac.vercel.app',
@@ -35,7 +35,7 @@ const projects = [
     title: 'Doctor Appointment',
     description:
       'A full-stack MERN application that allows patients to book and manage doctor appointments online, with secure authentication and role-based dashboards for doctors ,admin and patients.',
-    image:'https://www.softwaresuggest.com/blog/wp-content/uploads/2020/10/Best-Medical-Appointment-Scheduling-Software-in-2020.jpg',
+    image:'https://mobisoftinfotech.com/resources/wp-content/uploads/2018/07/Banner-1.png',
     tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
     githubLink: 'https://github.com/Dhanush18100/CareConnect.git',
     liveLink: 'https://github.com/Dhanush18100/CareConnect.git',
