@@ -38,7 +38,7 @@ const projects = [
     image:'https://mobisoftinfotech.com/resources/wp-content/uploads/2018/07/Banner-1.png',
     tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
     githubLink: 'https://github.com/Dhanush18100/CareConnect.git',
-    liveLink: 'https://github.com/Dhanush18100/CareConnect.git',
+    liveLink: '',
   },
   {
      title: 'QuickGPT',
@@ -101,7 +101,7 @@ const Projects = () => {
                     Code
                   </a>
                   <a
-                    href={project.liveLink}
+                    href={project.liveLink || 'Not Deployed'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="project-link live"
