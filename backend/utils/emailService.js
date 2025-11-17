@@ -1,29 +1,24 @@
 const nodemailer = require('nodemailer');
 
-// Create a transporter using Gmail SMTP
+// Gmail Transport (Recommended for Render)
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false, // true for 465, false for other ports
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_APP_PASSWORD
-  },
-  tls: {
-    rejectUnauthorized: false
+    pass: process.env.EMAIL_PASS    // must be APP PASSWORD
   }
 });
 
-const sendContactNotification = async (contactData) => {
-  const { name, email, subject, message } = contactData;
+const sendContactNotification = async ({ name, email, subject, message }) => {
 
   const mailOptions = {
     from: `"Portfolio Contact Form" <${process.env.EMAIL_USER}>`,
-    to: 'dhanush.nayak.100@gmail.com',
+    to: process.env.EMAIL_USER,
     subject: `New Contact Form Submission: ${subject}`,
     html: `
       <h2>New Contact Form Submission</h2>
-      <p><strong>From:</strong> ${name} (${email})</p>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
       <p><strong>Subject:</strong> ${subject}</p>
       <p><strong>Message:</strong></p>
       <p>${message}</p>
@@ -31,20 +26,13 @@ const sendContactNotification = async (contactData) => {
   };
 
   try {
-    // Verify connection configuration
-    await transporter.verify();
-    console.log('SMTP connection verified');
-
-    // Send email
     const info = await transporter.sendMail(mailOptions);
-    console.log('Contact notification email sent successfully:', info.messageId);
+    console.log("Email sent:", info.messageId);
     return info;
   } catch (error) {
-    console.error('Error sending contact notification email:', error);
+    console.error("Email error:", error);
     throw error;
   }
 };
 
-module.exports = {
-  sendContactNotification
-}; 
+module.exports = { sendContactNotification };
