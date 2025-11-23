@@ -1,14 +1,30 @@
 import React from 'react';
 import './Hero.css';
+import GradientText from './GradientText'
+
+
+
 
 const Hero = () => {
+  const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
   return (
     <section className="hero-section" id="home">
       <div className="hero-content">
-        <h1 className="hero-title">
-          Hi, I'm <span className="highlight">Dhanush</span>
-        </h1>
-        <h2 className="hero-subtitle">Full Stack Developer</h2>
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class"
+        >   <h1>
+
+            Hi, I'm <span className="highlight">Dhanush</span>
+          </h1>
+        </GradientText>
+        <h2 className="hero-subtitle">Fullstack Developer
+  </h2>
+
         <p className="hero-description">
           I build modern web applications with the MERN stack and create seamless user experiences.
         </p>
