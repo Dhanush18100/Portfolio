@@ -1,27 +1,15 @@
 import React from 'react';
 import './Hero.css';
-import GradientText from './GradientText'
-
-
-
 
 const Hero = () => {
-  const handleAnimationComplete = () => {
-  console.log('Animation completed!');
-};
   return (
     <section className="hero-section" id="home">
       <div className="hero-content">
-        <GradientText
-          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-          animationSpeed={3}
-          showBorder={false}
-          className="custom-class"
-        >   <h1>
+         <h1>
 
             Hi, I'm <span className="highlight">Dhanush</span>
           </h1>
-        </GradientText>
+       
         <h2 className="hero-subtitle">Fullstack Developer
   </h2>
 
