@@ -5,10 +5,7 @@ const Hero = () => {
   return (
     <section className="hero-section" id="home">
       <div className="hero-content">
-         <h1>
-
-            Hi, I'm <span className="highlight">Dhanush</span>
-          </h1>
+         <h1 className="hero-title"> Hi, I'm <span className="highlight">Dhanush</span> </h1>
        
         <h2 className="hero-subtitle">Fullstack Developer
   </h2>
