@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <section className="hero-section" id="home">
       <div className="hero-content">
-         <h1 className="hero-title"> Hi, I'm <span className="highlight">Dhanush</span> </h1>
-       
+        <h1 className="hero-title"> Hi, I'm <span className="highlight">Dhanush</span> </h1>
+
         <h2 className="hero-subtitle">Fullstack Developer
-  </h2>
+        </h2>
 
         <p className="hero-description">
           I build modern web applications with the MERN stack and create seamless user experiences.
