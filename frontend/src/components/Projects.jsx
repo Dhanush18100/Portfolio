@@ -48,7 +48,16 @@ const projects = [
     tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss','Gemini AI'],
     githubLink: 'https://github.com/Dhanush18100/QuickGPT.git',
     liveLink: 'https://quick-gpt-mauve-three.vercel.app/',
-  }
+  },
+  {
+     title: 'NotePad',
+    description:
+      'A simple and responsive MERN Notepad application for creating, organizing, and managing notes efficiently.',
+    image:'https://user-images.githubusercontent.com/119804168/213908189-71d6683f-50e3-4d44-a010-9e62bcb346eb.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/mern-note.git',
+    liveLink: 'https://mern-note-9k3i.onrender.com/',
+  },
  
 ];
 
