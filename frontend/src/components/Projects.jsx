@@ -58,6 +58,15 @@ const projects = [
     githubLink: 'https://github.com/Dhanush18100/mern-note.git',
     liveLink: 'https://mern-note-9k3i.onrender.com/',
   },
+  {
+     title: 'Food-View',
+    description:
+      'A platform where users can explore food reels while food partners upload and showcase their dishes through short videos.',
+    image:'https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/5c2dd049775555d2d4093e0c2dfeae5dce619d8d',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/food_view.git',
+    liveLink: 'https://food-view-frontend.onrender.com/',
+  },
  
 ];
 
