@@ -71,10 +71,10 @@ const projects = [
      title: 'Heart Guard (Major Project)',
     description:
       'A MERN-based AI web application that uses a Random Forest model to predict heart disease risk from patient health data for early detection and prevention.',
-    image:'+https://lh3.googleusercontent.com/gg-dl/ABS2GSmJgRkHl71OjtPe9DAQ89g6ez2gRyjeRKAT7pFmbFDs5vfEqC7q7REcHzF8s8A5VV9OhfcFudhg6IWEgy0JA--Ts7RnrvBtXwXrpwVBYrz64H4PwAgMtrbqq-vJij64VlKwC9Eb1SSHqoJNALdGXYjWdmZrocUcrMjLJ7AQ1z3r3JlV1A=s1024-rj',
+    image:'/banner.png',
     tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss','Python','Flask','Random Forest'],
     githubLink: 'https://github.com/Dhanush18100/Heart_Guard.git',
-    // liveLink: 'https://food-view-frontend.onrender.com/',
+    liveLink: 'https://github.com/Dhanush18100/Heart_Guard.git',
   },
  
 ];
