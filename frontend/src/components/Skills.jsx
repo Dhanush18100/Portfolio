@@ -35,8 +35,9 @@ const skillCategories = [
     {
     title:'Frameworks & Databases',
     skills:[
-      { name: 'Next.js', icon: '<i class="devicon-nextjs-original"></i>' },
-       { name: 'PostgreSQL', icon: '<i class="devicon-postgresql-plain colored"></i>' },
+        { name: 'Next.js', icon: '<i class="devicon-nextjs-plain"></i>' },
+        { name: 'Firebase', icon: '<i class="devicon-firebase-plain colored"></i>' },
+  { name: 'Supabase', icon: '<i class="devicon-supabase-plain colored"></i>' },
 
     ]
   },
