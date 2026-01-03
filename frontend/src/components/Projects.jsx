@@ -32,6 +32,15 @@ const projects = [
     liveLink: 'https://ai-mock-interview-zeta-lilac.vercel.app',
   },
   {
+    title: 'Smart Study',
+    description:
+      'A full-stack MERN application that enables students to share study materials and access learning resources uploaded by other students.',
+    image:'smartStudy.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/SmartStudy.git',
+    liveLink: 'https://smartstudy-frontend-xunm.onrender.com/',
+  },
+  {
     title: 'Doctor Appointment',
     description:
       'A full-stack MERN application that allows patients to book and manage doctor appointments online, with secure authentication and role-based dashboards for doctors ,admin and patients.',
