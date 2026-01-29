@@ -31,24 +31,24 @@ const projects = [
     githubLink: 'https://github.com/Dhanush18100/AI_Mock_Interview.git',
     liveLink: 'https://ai-mock-interview-zeta-lilac.vercel.app',
   },
-  // {
-  //   title: 'Smart Study',
-  //   description:
-  //     'A full-stack MERN application that enables students to share study materials and access learning resources uploaded by other students.',
-  //   image:'smartStudy.png',
-  //   tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
-  //   githubLink: 'https://github.com/Dhanush18100/SmartStudy.git',
-  //   liveLink: 'https://smartstudy-frontend-xunm.onrender.com/',
-  // },
-  // {
-  //   title: 'Doctor Appointment',
-  //   description:
-  //     'A full-stack MERN application that allows patients to book and manage doctor appointments online, with secure authentication and role-based dashboards for doctors ,admin and patients.',
-  //   image:'https://mobisoftinfotech.com/resources/wp-content/uploads/2018/07/Banner-1.png',
-  //   tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
-  //   githubLink: 'https://github.com/Dhanush18100/CareConnect.git',
-  //   liveLink: 'https://careconnect-frontend-o78v.onrender.com',
-  // },
+  {
+    title: 'Smart Study',
+    description:
+      'A full-stack MERN application that enables students to share study materials and access learning resources uploaded by other students.',
+    image:'smartStudy.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/SmartStudy.git',
+    liveLink: 'https://smartstudy-frontend-xunm.onrender.com/',
+  },
+  {
+    title: 'Doctor Appointment',
+    description:
+      'A full-stack MERN application that allows patients to book and manage doctor appointments online, with secure authentication and role-based dashboards for doctors ,admin and patients.',
+    image:'https://mobisoftinfotech.com/resources/wp-content/uploads/2018/07/Banner-1.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/CareConnect.git',
+    liveLink: 'https://careconnect-frontend-o78v.onrender.com',
+  },
   // {
   //    title: 'QuickGPT',
   //   description:
@@ -67,15 +67,15 @@ const projects = [
   //   githubLink: 'https://github.com/Dhanush18100/mern-note.git',
   //   liveLink: 'https://mern-note-9k3i.onrender.com/',
   // },
-  // {
-  //    title: 'Food-View',
-  //   description:
-  //     'A platform where users can explore food reels while food partners upload and showcase their dishes through short videos.',
-  //   image:'https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/5c2dd049775555d2d4093e0c2dfeae5dce619d8d',
-  //   tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
-  //   githubLink: 'https://github.com/Dhanush18100/food_view.git',
-  //   liveLink: 'https://food-view-frontend.onrender.com/register',
-  // },
+  {
+     title: 'Food-View',
+    description:
+      'A platform where users can explore food reels while food partners upload and showcase their dishes through short videos.',
+    image:'https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/5c2dd049775555d2d4093e0c2dfeae5dce619d8d',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express.js','Tailwindcss'],
+    githubLink: 'https://github.com/Dhanush18100/food_view.git',
+    liveLink: 'https://food-view-frontend.onrender.com/register',
+  },
   //  {
   //    title: 'Heart Guard (Major Project)',
   //   description:
